@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <title>Smash magazine</title>
+  </head>
+  <body>
+    <section class="m-3">
+      <h5>Click this image</h5>
+      <div class="my-3 trigger">
+        <img src="./assets/images/frog_360.jpg" alt="frog" class="frog" />
+      </div>
+    </section>
+    <script>
+      const trigger = document.querySelector('.trigger');
+      trigger.addEventListener('click', () => {
+        trigger.classList.toggle('clicked');
+      });
+      trigger.title = 'click here to see animation';
+    </script>
+  </body>
+</html>
