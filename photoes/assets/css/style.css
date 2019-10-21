@@ -1,0 +1,167 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.frame {
+  box-sizing: border-box;
+  border: 0.6rem solid #ddd;
+  background-color: #ddd;
+  width: 40rem;
+}
+
+.card {
+  position: relative;
+}
+
+.card-overlay {
+  position: absolute;
+  z-index: 10;
+}
+
+.card-overlay-main {
+  top: 0;
+  width: 41.2rem;
+  max-width: 70%;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+
+.container-outer {
+  max-width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+  box-sizing: border-box;
+}
+
+.container-inner {
+  transform: translateX(calc(-100% / 3));
+  width: 300%;
+}
+
+.fas {
+  font-size: 2rem;
+  background-color: rgba(80,80,80, 0.4);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.fa-arrow-left {
+  margin-left: -2.5rem;
+}
+
+.fa-arrow-right {
+  margin-right: -2.5rem;
+}
+
+.circle {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.3rem;
+}
+
+.circle-main {
+  background-color: #888;
+}
+
+.circle-side {
+  background-color: #aaa;
+  cursor: pointer;
+}
+
+.circle-bound {
+  text-align: center;
+}
+
+@media (min-width: 576px) { /* sm */
+  .fas {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) { /* md */
+}
+
+@media (min-width: 857px) { /* lg */
+  .container-outer {
+    width: 41.2rem;
+    max-width: 41.2rem;
+    padding-left: calc(41.2rem * 0.15);
+    padding-right: calc(41.2rem * 0.15);
+    box-sizing: content-box;
+  }
+
+  .container-inner {
+    transform: translateX(-40rem);
+    width: calc(40rem * 3);
+  }
+
+  .card-overlay-main {
+    max-width: calc(70% + 2.5rem);
+  }
+}
